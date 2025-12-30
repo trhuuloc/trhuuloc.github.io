@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huu-Loc Tran</title>
+    
+    <style>
+        /* Cấu hình chung */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px; /* Độ rộng trang web */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Định dạng link */
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Tiêu đề các mục */
+        h1 { text-align: center; font-size: 2.5em; margin-bottom: 10px; }
+        h2 { 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 5px; 
+            margin-top: 40px; 
+            color: #222;
+        }
+        h3 { margin-top: 20px; font-size: 1.2em; color: #444; }
+
+        /* Menu điều hướng ngang */
+        .nav-bar {
+            text-align: center;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        .nav-bar a { margin: 0 15px; font-weight: bold; color: #555; }
+        .nav-bar a:hover { color: #0066cc; }
+
+        /* Bố cục phần giới thiệu (Flexbox) */
+        .profile-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        /* Ảnh đại diện */
+        .profile-image { flex: 0 0 220px; } /* Chiều rộng ảnh */
+        .profile-image img {
+            width: 100%;
+            border-radius: 8px; /* Bo tròn góc ảnh */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-info { flex: 1; }
+
+        /* Danh sách bài báo/tin tức */
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+        
+        /* Nút nhỏ cho Link PDF/Code */
+        .badge-link {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #111;
+            margin-right: 6px;
+            background: #ffffff;
+            padding: 0px 2px;
+            border-radius: 4px;
+            border: 0.8px solid #222;
+            text-decoration: none;
+        }
+
+        .badge-link:hover {
+            background: #f3f3f3;
+        }
+
+        /* Giao diện Mobile */
+        @media (max-width: 768px) {
+            .profile-container { flex-direction: column; align-items: center; text-align: center; }
+            .profile-image { width: 60%; margin-bottom: 20px; }
+            .profile-info { text-align: left; }
+        }
+    </style>
+    <link rel="StyleSheet" href="./style.css" type="text/css" media="screen">
+</head>
+
+<body>
+
+    <h1>Huu-Loc Tran</h1>
+
+    <div class="nav-bar">
+        <a href="./index.html">Home</a>
+        <!-- <a href="#">Research</a> 
+        <a href="#">Teaching</a>
+        <a href="#">CV / Resume</a> -->
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="./avatar.jpg" alt="Ảnh đại diện">
+        </div>
+        
+        <div class="profile-info">
+            <h3>Huu-Loc Tran</h3>
+            
+            <p>
+                [ <a href="https://github.com/trhuuloc" target="_blank">GitHub</a> |
+                <a href="https://scholar.google.com/citations?user=1xlRrhMAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+                <a href="https://www.linkedin.com/in/huuloctran310504/" target="_blank">LinkedIn</a> ]
+            </p>
+            
+            <p>
+                <b>Research Assistant</b> at <a href="https://scholar.google.com/citations?user=I8bNZakAAAAJ&hl=en" target="_blank">CV Lab, UIT</a> & <b>Research Assistant</b> at <a href="https://aivietnam.edu.vn/" target="_blank">AI VIET NAM</a>
+            </p>
+
+            <!-- <p>
+                <b>Education:</b><br>
+                Final-year undergraduate student (Honors Program) in Computer Science,<br>
+                <a href="https://en.uit.edu.vn/" target="_blank">University of Information Technology (UIT)</a>, <a href="https://vnuhcm.edu.vn/" target="_blank">Vietnam National University - HCMC</a>.
+            </p> -->
+
+
+            <p>
+                <b>Email:</b> trhuuloc04@gmail.com
+            </p>
+            
+            <p>
+                <b>Research Interests:</b> Vision-Language Models, Computer Vision, Information Retrieval.
+            </p>
+        </div>
+    </div>
+
+    <h2>News</h2>
+    <ul>
+        <li>
+            <strong>December 2025:</strong> Started working as a Teaching Assistant at 
+            <a href="https://aivietnam.edu.vn" target="_blank"><strong>AI VIET NAM</strong></a>.
+        </li>
+        <li>
+            <strong>November 2025:</strong> Paper 
+            <em>“ITSELF: Attention Guided Fine-Grained Alignment for Vision–Language Retrieval”</em> 
+            accepted at 
+            <a href="https://wacv2026.thecvf.com" target="_blank"><strong>WACV</strong></a> 
+            (to be presented in March 2026).
+        </li>
+    </ul>
+
+
+    <h2>Publications</h2>
+    
+    <!-- <h3>Conference Papers</h3> -->
+    <ul>
+        <li>
+            <strong>
+                ITSELF: Attention Guided Fine-Grained Alignment for Vision–Language Retrieval
+            </strong>
+            <!-- [<a class="badge-link" href="https://openaccess.thecvf.com/content/CVPR2025W/IViSE/papers/Tran_Towards_Efficient_and_Robust_Moment_Retrieval_System_A_Unified_Framework_CVPRW_2025_paper.pdf" target="_blank">Paper</a>] -->
+            <br>
+            Tien-Huy Nguyen*,
+            <u><strong>Huu-Loc Tran*</strong></u>, 
+            Thanh Duc Ngo
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                IEEE/CVF Winter Conference on Applications of Computer Vision 
+                <strong>(WACV 2026)</strong>. Accepted in Round 2 (acceptance rate: <strong>26.9%</strong>).
+            </i>
+        </li>
+
+        <li>
+            <strong>
+                Towards Efficient and Robust Moment Retrieval System: 
+                A Unified Framework for Multi-Granularity Models and Temporal Reranking
+            </strong>
+            <a class="badge-link" href="https://openaccess.thecvf.com/content/CVPR2025W/IViSE/papers/Tran_Towards_Efficient_and_Robust_Moment_Retrieval_System_A_Unified_Framework_CVPRW_2025_paper.pdf" target="_blank">Paper</a>
+            <br>
+            <u><strong>Huu-Loc Tran*</strong></u>, 
+            Tinh-Anh Nguyen-Nhu*, 
+            Huu-Phong Phan-Nguyen*, 
+            Tien-Huy Nguyen, 
+            Nhat-Minh Nguyen-Dich, 
+            Anh Dao, 
+            Huy-Duc Do, 
+            Quan Nguyen, 
+            Hoang M. Le, 
+            Quang-Vinh Dinh
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops 
+                <strong>(CVPR 2025 Workshops)</strong>.
+            </i>
+        </li>
+
+        <li>
+            <strong>
+                A Lightweight Moment Retrieval System with Global Re-Ranking and Robust Adaptive Bidirectional Temporal Search
+            </strong>
+            <a class="badge-link" href="https://openaccess.thecvf.com/content/CVPR2025W/IViSE/papers/Nguyen-Nhu_A_Lightweight_Moment_Retrieval_System_with_Global_Re-Ranking_and_Robust_CVPRW_2025_paper.pdf" target="_blank">Paper</a>
+            <br>
+            Tinh-Anh Nguyen-Nhu*, <u><strong>Huu-Loc Tran*</strong></u>, Nguyen-Khang Le*, Minh-Nhat Nguyen*, Tien-Huy Nguyen, Hoang-Long Nguyen-Huu, Huu-Phong Phan-Nguyen, Huy-Thach Pham, Quan Nguyen, Hoang M Le, Quang-Vinh Dinh
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops 
+                <strong>(CVPR 2025 Workshops)</strong>.
+            </i>
+        </li>
+
+        <li>
+            <strong>
+                Cycle Training with Semi-Supervised Domain Adaptation: Bridging Accuracy and Efficiency for Real-Time Mobile Scene Detection
+            </strong>
+            <a class="badge-link" href="https://openaccess.thecvf.com/content/CVPR2025W/MAI/papers/Phan-Nguyen_Cycle_Training_with_Semi-Supervised_Domain_Adaptation_Bridging_Accuracy_and_Efficiency_CVPRW_2025_paper.pdf" target="_blank">Paper</a>
+            <br>
+            Huu-Phong Phan-Nguyen*, Anh Dao*, Tien-Huy Nguyen*, Tuan Quang, <u><strong>Huu-Loc Tran</strong></u>, Tinh-Anh Nguyen-Nhu, Huy-Thach Pham, Quan Nguyen, Hoang M Le, Quang-Vinh Dinh
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops 
+                <strong>(CVPR 2025 Workshops)</strong>.
+            </i>
+        </li>
+
+        <li>
+            <strong>
+                Hybrid, Unified and Iterative: A Novel Framework for Text-based Person Anomaly Retrieval
+            </strong>
+            <a class="badge-link" href="https://dl.acm.org/doi/pdf/10.1145/3701716.3717653" target="_blank">Paper</a>
+            <br>
+            Tien-Huy Nguyen*, <u><strong>Huu-Loc Tran*</strong></u>, Huu-Phong Phan-Nguyen*, Quang-Vinh Dinh
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                ACM Web Conference Workshops 
+                <strong>(WWW 2025 Workshops)</strong>.
+            </i>
+        </li>
+
+        <li>
+            <strong>
+                FA-YOLOv9: Improved YOLOv9 Based on Feature Attention Block
+            </strong>
+            <a class="badge-link" href="https://ieeexplore.ieee.org/abstract/document/10661057" target="_blank">Paper</a>
+            <br>
+            Tho-Quang Nguyen, <u><strong>Huu-Loc Tran</strong></u>, Tuan-Khoa Tran, Huu-Phong Phan-Nguyen, Tien-Huy Nguyen
+            <br>
+            <i>
+                International Conference on Multimedia Analysis and Pattern Recognition
+                <strong>(MAPR 2024)</strong>.
+            </i>
+        </li>
+        
+        <li>
+            <strong>
+                Multimodal Fusion in NewsImages 2023: Evaluating Translators, Keyphrase Extraction, and CLIP Pre-Training.
+            </strong>
+            <a class="badge-link" href="https://ceur-ws.org/Vol-3658/paper9.pdf" target="_blank">Paper</a>
+            <br>
+            Tien-Huy Nguyen*, Hoang-Long Nguyen-Huu*, Thien-Doanh Le*, <u><strong>Huu-Loc Tran*</strong></u>, Quoc-Khanh Le-Tran*, Hoang-Bach Ngo, Minh-Hung An, Quang-Vinh Dinh
+            <span class="info-btn">i</span>
+            <br>
+            <i>
+                <strong>MediaEval 2023</strong>.
+            </i>
+        </li>
+
+    </ul>
+
+
+    <!-- <h3>Journal Articles</h3>
+    <ul>
+        <li>
+            <strong>[Tên Bài Báo Tạp Chí]</strong>
+            <br>
+            Authors...
+            <br>
+            <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024.</i>
+            <br>
+            [<a class="badge-link" href="#">Paper</a>]
+        </li>
+    </ul> -->
+
+    <h2>Biography</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li>
+                Sep 2022 - present: Bachelor of Science in Computer Science (Honors Program), <a href="https://en.uit.edu.vn/" target="_blank">University of Information Technology (UIT)</a>, <a href="https://vnuhcm.edu.vn/" target="_blank">Vietnam National University - HCMC</a>, Vietnam.
+            </li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>
+                Apr 2025 - present: Research Assistant, Computer Vision Lab, <a href="https://en.uit.edu.vn/" target="_blank">University of Information Technology (UIT)</a>, <a href="https://vnuhcm.edu.vn/" target="_blank">Vietnam National University - HCMC</a>, Vietnam. <br>
+                Supervisors: <a href="https://scholar.google.com/citations?user=I8bNZakAAAAJ&hl=en" target="_blank">Dr. Thanh Duc Ngo</a>
+            </li>
+
+            <!-- <li>
+                Dec 2025 - present: Teaching Assistant, <a href="https://aivietnam.edu.vn/" target="_blank">AI VIET NAM</a>.
+            </li> -->
+
+            <li>
+                Jan 2025 - present: Research Assistant, <a href="https://aivietnam.edu.vn/" target="_blank">AI VIET NAM</a>. <br>
+                Supervisors: <a href="https://www.linkedin.com/in/dinhquangvinh1986/?_l=en_US" target="_blank">Dr. Quang-Vinh Dinh</a>
+            </li>
+
+            <li>
+                May 2024 - Aug 2024: Research Student, MMLab, <a href="https://en.uit.edu.vn/" target="_blank">University of Information Technology (UIT)</a>, <a href="https://vnuhcm.edu.vn/" target="_blank">Vietnam National University - HCMC</a>, Vietnam. <br>
+                Supervisors: <a href="https://scholar.google.com/citations?user=DulHk_YAAAAJ&hl=en" target="_blank">Dr. Vinh-Tiep Nguyen</a>
+            </li>
+
+            <!-- <li>
+                Jun 2024 - Jun 2025: AI Resident, <a href="https://aivietnam.edu.vn/" target="_blank">AI VIET NAM</a>.
+            </li> -->
+        </ul>
+
+    <!-- <h2>Others</h2>
+        <h3>Honors & Awards</h3>
+        <ul>
+            <li>[Năm]: [Tên Giải thưởng / Học bổng].</li>
+            <li>[Năm]: [Tên Giải thưởng khác].</li>
+        </ul> -->
+
+    <div style="text-align: center; margin-top: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>&copy; Huu-Loc Tran. Last updated: December 2025.</p>
+    </div>
+</body>
+</html>

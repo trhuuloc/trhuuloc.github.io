@@ -1,0 +1,38 @@
+.info-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    margin-left: 0px;
+    border-radius: 50%;
+    background-color: #555;
+    color: #fff;
+    font-size: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    vertical-align: super;
+    transform: translateY(0px);
+}
+
+.info-btn::after {
+    content: "* Equal contribution";
+    position: absolute;
+    bottom: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 1.0em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.info-btn:hover::after {
+    opacity: 1;
+}
