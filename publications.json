@@ -1,0 +1,141 @@
+{
+  "publications": [
+    {
+      "title": "ITSELF: Attention Guided Fine-Grained Alignment for Vision–Language Retrieval",
+      "authors": [
+        "Tien-Huy Nguyen*",
+        "Huu-Loc Tran*",
+        "Thanh Duc Ngo"
+      ],
+      "venue": "WACV (2026)",
+      "thumbnail": "images/thumbs/itself.png",
+      "selected": 1,
+      "award": "Oral Presentation (85/2550)",
+      "links": {
+        "pdf": "https://openaccess.thecvf.com/content/WACV2026/papers/Nguyen_ITSELF_Attention_Guided_Fine-Grained_Alignment_for_Vision-Language_Retrieval_WACV_2026_paper.pdf",
+        "project": "https://trhuuloc.github.io/itself/"
+      }
+    },
+    {
+      "title": "Towards Efficient and Robust Moment Retrieval System: A Unified Framework for Multi-Granularity Models and Temporal Reranking",
+      "authors": [
+        "Huu-Loc Tran*",
+        "Tinh-Anh Nguyen-Nhu*",
+        "Huu-Phong Phan-Nguyen*",
+        "Tien-Huy Nguyen",
+        "Nhat-Minh Nguyen-Dich",
+        "Anh Dao",
+        "Huy-Duc Do",
+        "Quan Nguyen",
+        "Hoang M. Le",
+        "Quang-Vinh Dinh"
+      ],
+      "venue": "CVPR Workshops (2025)",
+      "thumbnail": "images/thumbs/ivise1.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2025W/IViSE/papers/Tran_Towards_Efficient_and_Robust_Moment_Retrieval_System_A_Unified_Framework_CVPRW_2025_paper.pdf"
+      }
+    },
+    {
+      "title": "A Lightweight Moment Retrieval System with Global Re-Ranking and Robust Adaptive Bidirectional Temporal Search",
+      "authors": [
+        "Tinh-Anh Nguyen-Nhu*",
+        "Huu-Loc Tran*",
+        "Nguyen-Khang Le*",
+        "Minh-Nhat Nguyen*",
+        "Tien-Huy Nguyen",
+        "Hoang-Long Nguyen-Huu",
+        "Huu-Phong Phan-Nguyen",
+        "Huy-Thach Pham",
+        "Quan Nguyen",
+        "Hoang M Le",
+        "Quang-Vinh Dinh"
+      ],
+      "venue": "CVPR Workshops (2025)",
+      "thumbnail": "images/thumbs/ivise2.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2025W/IViSE/papers/Nguyen-Nhu_A_Lightweight_Moment_Retrieval_System_with_Global_Re-Ranking_and_Robust_CVPRW_2025_paper.pdf"
+      }
+    },
+    {
+      "title": "Hybrid, Unified and Iterative: A Novel Framework for Text-based Person Anomaly Retrieval",
+      "authors": [
+        "Tien-Huy Nguyen*",
+        "Huu-Loc Tran*",
+        "Huu-Phong Phan-Nguyen*",
+        "Quang-Vinh Dinh"
+      ],
+      "venue": "WWW Workshops (2025)",
+      "thumbnail": "images/thumbs/lhp.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://dl.acm.org/doi/pdf/10.1145/3701716.3717653",
+        "code": "https://github.com/trhuuloc/Hybrid-Unified-and-Iterative-A-Novel-Framework-for-Text-based-Person-Anomaly-Retrieval"
+      }
+    },
+    {
+      "title": "Cycle Training with Semi-Supervised Domain Adaptation: Bridging Accuracy and Efficiency for Real-Time Mobile Scene Detection",
+      "authors": [
+        "Huu-Phong Phan-Nguyen*",
+        "Anh Dao*",
+        "Tien-Huy Nguyen*",
+        "Tuan Quang",
+        "Huu-Loc Tran",
+        "Tinh-Anh Nguyen-Nhu",
+        "Huy-Thach Pham",
+        "Quan Nguyen",
+        "Hoang M Le",
+        "Quang-Vinh Dinh"
+      ],
+      "venue": "CVPR Workshops (2025)",
+      "thumbnail": "images/thumbs/mai.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://openaccess.thecvf.com/content/CVPR2025W/MAI/papers/Phan-Nguyen_Cycle_Training_with_Semi-Supervised_Domain_Adaptation_Bridging_Accuracy_and_Efficiency_CVPRW_2025_paper.pdf"
+      }
+    },
+    {
+      "title": "FA-YOLOv9: Improved YOLOv9 Based on Feature Attention Block",
+      "authors": [
+        "Tho-Quang Nguyen",
+        "Huu-Loc Tran",
+        "Tuan-Khoa Tran",
+        "Huu-Phong Phan-Nguyen",
+        "Tien-Huy Nguyen"
+      ],
+      "venue": "MAPR (2024)",
+      "thumbnail": "images/thumbs/mapr.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://ieeexplore.ieee.org/abstract/document/10661057"
+      }
+    },
+    {
+      "title": "Multimodal Fusion in NewsImages 2023: Evaluating Translators, Keyphrase Extraction, and CLIP Pre-Training",
+      "authors": [
+        "Tien-Huy Nguyen*",
+        "Hoang-Long Nguyen-Huu*",
+        "Thien-Doanh Le*",
+        "Huu-Loc Tran*",
+        "Quoc-Khanh Le-Tran*",
+        "Hoang-Bach Ngo",
+        "Minh-Hung An",
+        "Quang-Vinh Dinh"
+      ],
+      "venue": "MediaEval (2023)",
+      "thumbnail": "images/thumbs/mediaeval.png",
+      "selected": 0,
+      "award": "",
+      "links": {
+        "pdf": "https://ceur-ws.org/Vol-3658/paper9.pdf"
+      }
+    }
+  ]
+}
