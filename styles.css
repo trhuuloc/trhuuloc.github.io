@@ -329,6 +329,8 @@ section {
 }
 
 .service-category p, .misc-item p {
+  text-align: justify;
+  text-justify: inter-word;
   margin: 0.25rem 0 0.75rem;
 }
 
@@ -364,6 +366,8 @@ ul {
 
 p {
   margin: 0.5rem 0 0.75rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 strong {
