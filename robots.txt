@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trhuuloc.github.io/sitemap.xml
