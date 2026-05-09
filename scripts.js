@@ -147,21 +147,27 @@ function createPublicationElement(publication) {
     if (publication.links.pdf) {
       const pdfLink = document.createElement('a');
       pdfLink.href = publication.links.pdf;
-      pdfLink.textContent = '[PDF]';
+      pdfLink.textContent = 'PDF';
+      pdfLink.target = '_blank';
+      pdfLink.rel = 'noopener noreferrer';
       links.appendChild(pdfLink);
     }
     
     if (publication.links.code) {
       const codeLink = document.createElement('a');
       codeLink.href = publication.links.code;
-      codeLink.textContent = '[Code]';
+      codeLink.textContent = 'Code';
+      codeLink.target = '_blank';
+      codeLink.rel = 'noopener noreferrer';
       links.appendChild(codeLink);
     }
     
     if (publication.links.project) {
       const projectLink = document.createElement('a');
       projectLink.href = publication.links.project;
-      projectLink.textContent = '[Project Page]';
+      projectLink.textContent = 'Project Page';
+      projectLink.target = '_blank';
+      projectLink.rel = 'noopener noreferrer';
       links.appendChild(projectLink);
     }
     
