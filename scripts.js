@@ -18,6 +18,31 @@ document.addEventListener('DOMContentLoaded', function() {
   if (toggleButton) {
     toggleButton.addEventListener('click', togglePublications);
   }
+
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = themeToggleBtn.querySelector('i');
+
+  document.documentElement.setAttribute('data-theme', 'light');
+  updateIcon('light');
+
+  themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      updateIcon(newTheme);
+  });
+
+  function updateIcon(theme) {
+        if (theme === 'dark') {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+    }
+
 });
 
 // Load publications from JSON file
